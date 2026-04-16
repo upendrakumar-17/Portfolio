@@ -1,0 +1,13 @@
+.section-background{
+    background-color: black;
+}
+
+.section-foreground{
+    background: transparent;
+    color: white;
+}
+
+.heading-h1{
+    font-size: 5rem;
+    font-weight: 700;
+}

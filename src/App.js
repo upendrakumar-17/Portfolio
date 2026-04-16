@@ -1,10 +1,19 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
+import './layout/Section.css';
+import Hero from './components/Hero';
+import NotFound from "./pages/NotFound";
+import Loading from "./pages/Loading";
 
 function App() {
   return (
-    <div className="App">
-      App
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/l" element={<Loading/>}/>
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
