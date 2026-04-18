@@ -8,7 +8,8 @@ const NotFound = () => {
             Background 
         </div>
         <div className='section-foreground'>
-            <h1 className='heading-h1'>404 Not Found</h1>
+            <h1 className='heading-h1'>404</h1>
+            <h2 className='heading-h2'>Page Not Found</h2>
         </div>
     </div>
   )

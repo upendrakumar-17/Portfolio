@@ -3,17 +3,11 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #000;
-  position: relative;
+  background-color: var(--black);
+  overflow: hidden;
 }
 
 .svg-container {
-  overflow: visible;
-  align-items: center;
-  justify-content: center;
-}
-
-.svg-path {
-  animation: dash 3s linear infinite;
-  margin: auto;
+  width: 100%;
+  height: auto;
 }
