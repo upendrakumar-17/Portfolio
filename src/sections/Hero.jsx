@@ -4,23 +4,32 @@ import Gabi from '../assets/Gabi.png';
 
 const Hero = () => {
     return (
-        <section className='section hero-section'>
+        <section className='section'>
             <div className='section-background'>
                 <img className='section-background-image' src={Gabi} alt="Gabi" />
             </div>
             <div className='section-foreground'>
-                <div className='hero-text'>
-                    <h4 className='text hero-greeting'>Hey!</h4>
-                    <h3 className='text hero-intro'>I' am</h3>
-                    <div className='text hero-name'>
-                        UPENDRA
+                <div className='hero-container text'>
+                    <div className='hero-intro-container'>
+                        <div className='hero-greeting'>
+                            Hey!
+                        </div>
+                        <div className='hero-intro'>
+                            I am
+                        </div>
                     </div>
-                    <div className='text hero-name'>
-                        KUMAR
+                    <div className='hero-name'>
+                        <div className='hero-firstname'>
+                            <h1>UPENDRA</h1>
+                        </div>
+                        <div className='hero-lastname'>
+                            <h2>KUMAR</h2>
+                        </div>
                     </div>
-                </div>
-                <div className='text hero-greeting-button'>
-                    Greet!!!
+                    <div className='hero-button'>
+                        <input type="text" placeholder='Enter your greetings here...' />
+                        <button onClick={()=> {console.log("greeting button clicked.")}}>--{`>`}</button>    
+                    </div>
                 </div>
             </div>
         </section>
