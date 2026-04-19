@@ -6,14 +6,21 @@
     right: 0;
     height: 100vh;
     width:300px;
-    padding: 10px;
+    padding: 10px 40px;
     z-index: 3;
     background-color: var(--black);
     justify-content: space-between;
     color: var(--white);
     box-sizing: border-box;
     border: 5px solid var(--white);
-    border-radius: 20px;;
+    border-radius: 20px;
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar-container.open {
+    transform: translateX(0);
 }
 
 .sidebar-header{
@@ -21,4 +28,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.sidebar-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-title{
+    font-family: "Parisienne", cursive;
+    font-size: 30px;    
 }
