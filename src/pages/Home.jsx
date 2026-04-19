@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Hero from '../sections/Hero'
 import Sidebar from '../components/Sidebar'
 import Quote from '../subsections/Quote'
+import About from '../sections/About'
 
 const Home = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -16,6 +17,7 @@ const Home = () => {
         <Hero/>
         {sidebarOpen && <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />}
         <Quote/>
+        <About/>
     </div>
   )
 }

@@ -1,24 +1,23 @@
 import React from 'react';
 import './Navbar.css';
+import { MdMail } from "react-icons/md";
 import { MdOutlineMenu } from "react-icons/md";
 
 const Navbar = ({ sidebarOpen, setSidebarOpen }) => {
   return (
     <div className='navbar-container'>
         <div className='navbar-left'>
-            <div>
-                Logo
+            <div className='navbar-logo'>
             </div>
-            <div>
-                Upendra Kumar
+            <div className='navbar-title'>
+                upendra kumar
             </div>
         </div>
         <div className='navbar-right'>
-            <div>
-                Github
-            </div>
-            <div onClick={() => setSidebarOpen(true)}>
-                <MdOutlineMenu/>
+            <div className='nav-link'>
+                <button onClick={() => setSidebarOpen(true)}>
+                    <MdOutlineMenu size={30}/>
+                </button>
             </div>
         </div>
     </div>

@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
 import './layout/Section.css';
@@ -7,13 +8,27 @@ import NotFound from "./pages/NotFound";
 import Loading from "./pages/Loading";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 6000); // adjust duration
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/l" element={<Loading/>}/>
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      {
+        loading ?
+          <Loading />
+          :
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/l" element={<Loading />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+      }
     </BrowserRouter>
   );
 }

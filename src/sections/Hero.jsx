@@ -4,7 +4,7 @@ import Gabi from '../assets/Gabi.png';
 
 const Hero = () => {
     return (
-        <section className='section'>
+        <section className='section hero-section'>
             <div className='section-background'>
                 <img className='section-background-image' src={Gabi} alt="Gabi" />
             </div>

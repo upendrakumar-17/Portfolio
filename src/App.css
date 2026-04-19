@@ -7,6 +7,14 @@
   --white: #ffffff;
 }
 
+button, a {
+    background: none;
+    border: none;
+    outline: none;
+    color: inherit;
+    cursor: pointer;
+}
+
 .text{
   color: var(--white);
 }
