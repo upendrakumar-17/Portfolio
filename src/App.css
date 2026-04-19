@@ -6,3 +6,7 @@
   --black: #000000;
   --white: #ffffff;
 }
+
+.text{
+  color: var(--white);
+}

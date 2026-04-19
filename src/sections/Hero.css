@@ -1,0 +1,32 @@
+.section-foreground{
+    padding: 40px;
+}
+
+.hero-greeting {
+    padding: 30px 0;
+    font-size: clamp(24px, 5vw, 60px);
+}
+
+.hero-intro {
+    padding: 30px 0;
+    font-size: clamp(32px, 6vw, 80px);
+}
+
+.hero-name {
+    font-size: clamp(40px, 10vw, 150px);
+    font-weight: 600;
+}
+
+.hero-greeting-button{
+    display: flex;
+    width: 100px;
+    height: 75px;
+    padding: 10px;
+    /* font-size: clamp(40px, 5vw, 150px); */
+    box-sizing: border-box;
+    background: transparent;
+    border: 2px solid var(--white);
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+}
