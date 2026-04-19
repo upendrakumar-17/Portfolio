@@ -7,7 +7,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
     <div className={`sidebar-container ${sidebarOpen ? "open" : ""}`}>
       <div className='sidebar-header'>
         <div className='sidebar-title'>upendra kumar</div>
-        <button onClick={() => setSidebarOpen(false)}>
+        <button className='sidebar-close' onClick={() => setSidebarOpen(false)}>
           <MdClose size={30} />
         </button>
       </div>
