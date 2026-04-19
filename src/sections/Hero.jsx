@@ -1,8 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState} from 'react';
 import './Hero.css';
 import Gabi from '../assets/Gabi.png';
 
 const Hero = () => {
+
+    const greetings = [
+        "Hey!",
+        "Hello!",
+        "Hola!",
+        "Привет!",
+        "こんにちは!",
+        "नमस्ते!",
+        "Bonjour!",
+    ];
+
+    const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIndex((prev) => (prev + 1) % greetings.length);
+        }, 2000);
+
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <section className='section'>
             <div className='section-background'>
@@ -12,7 +33,7 @@ const Hero = () => {
                 <div className='hero-container text'>
                     <div className='hero-intro-container'>
                         <div className='hero-greeting'>
-                            Hey!
+                            {greetings[index]}
                         </div>
                         <div className='hero-intro'>
                             I am
@@ -28,7 +49,7 @@ const Hero = () => {
                     </div>
                     <div className='hero-button'>
                         <input type="text" placeholder='Enter your greetings here...' />
-                        <button onClick={()=> {console.log("greeting button clicked.")}}>--{`>`}</button>    
+                        <button onClick={() => { console.log("greeting button clicked.") }}>--{`>`}</button>
                     </div>
                 </div>
             </div>
