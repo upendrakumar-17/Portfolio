@@ -48,7 +48,7 @@
     opacity: 0.9;
 }
 
-/* .hero-message-container {
+.hero-message-container {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -92,4 +92,4 @@
 .hero-message-send-button:hover {
     background: var(--white);
     color: black;
-} */
+}

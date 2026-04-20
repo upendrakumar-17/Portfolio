@@ -1,4 +1,4 @@
-.hero-message-container {
+/* .hero-message-container {
     position: relative;
     display: flex;
     align-items: center;
@@ -45,7 +45,7 @@
 
 .flying-icon {
     position: absolute;
-    right: 20px;  /* start at button */
+    right: 20px;  
     top: 15px;
 
     opacity: 0;
@@ -87,7 +87,6 @@
 .flying-icon {
     position: absolute;
 
-    /* 👇 anchor it exactly over button */
     right: 18px;
     top: 50%;
     transform: translateY(-50%);
@@ -97,4 +96,4 @@
 }
 .flying-icon {
     background: red;
-}
+} */

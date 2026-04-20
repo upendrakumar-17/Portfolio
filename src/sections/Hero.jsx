@@ -3,7 +3,6 @@ import './Hero.css';
 import Gabi from '../assets/Gabi.png';
 import TypingGreeting from '../components/TypingGreeting';
 import { MdSend } from "react-icons/md";
-import MessageBox from '../components/MessageBox';
 
 const Hero = () => {
 
@@ -31,7 +30,7 @@ const Hero = () => {
                             <h2>KUMAR</h2>
                         </div>
                     </div>
-                    {/* <div className='hero-message-container'>
+                    <div className='hero-message-container'>
                         <input
                             className='hero-message-input'
                             type="text"
@@ -44,8 +43,8 @@ const Hero = () => {
                             }}>
                             <MdSend size={30} />
                         </button>
-                    </div> */}
-                    <MessageBox/>
+                    </div>
+                    {/* <MessageBox/> */}
                 </div>
             </div>
         </section>
