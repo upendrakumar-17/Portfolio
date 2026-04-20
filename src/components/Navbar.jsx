@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.css';
-import { MdMail } from "react-icons/md";
+// import { MdMail } from "react-icons/md";
 import { MdOutlineMenu } from "react-icons/md";
 
 const Navbar = ({ sidebarOpen, setSidebarOpen }) => {

@@ -23,7 +23,7 @@ const Quote = () => {
     }, 3000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [words.length]);
 
   return (
     <div className='subsection'>

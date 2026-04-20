@@ -3,6 +3,7 @@ import './Hero.css';
 import Gabi from '../assets/Gabi.png';
 import TypingGreeting from '../components/TypingGreeting';
 import { MdSend } from "react-icons/md";
+// import SendButton from '../components/SendButton';
 
 const Hero = () => {
 
@@ -45,6 +46,7 @@ const Hero = () => {
                         </button>
                     </div>
                     {/* <MessageBox/> */}
+                    {/* <SendButton/> */}
                 </div>
             </div>
         </section>
