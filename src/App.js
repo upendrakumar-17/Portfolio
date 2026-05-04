@@ -1,10 +1,13 @@
 import React from "react";
 import Home from "./pages/Home";
 import "./App.css";
+import "./layouts/Section.css"
+import NotFound from "./utilities/NotFound";
 const App = () => {
   return (
-    <div>
+    <div className="app">
       <Home/>
+      <NotFound/>
     </div>
   )
 }
