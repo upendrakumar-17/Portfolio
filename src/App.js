@@ -1,34 +1,8 @@
-import { useState, useEffect } from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import './App.css';
-
-import Home from './pages/Home';
-import NotFound from "./pages/NotFound";
-import Loading from "./pages/Loading";
-
-function App() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 6000);
-
-    return () => clearTimeout(timer);
-  }, []);
+import React from "react";
+const App = () => {
   return (
-    <BrowserRouter>
-      {
-        loading ?
-          <Loading />
-          :
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-      }
-    </BrowserRouter>
-  );
+    <div>App</div>
+  )
 }
 
 export default App;
