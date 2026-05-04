@@ -5,44 +5,31 @@
 }
 
 :root {
-  --black: #000000;
-  --white: #ffffff;
-  --accent: red;
-  
-  --space-xs: 0.5rem;
-  --space-sm: 1rem;
-  --space-md: 1.5rem;
-  --space-lg: 2.5rem;
-  --space-xl: 4rem;
-  
-  --transition-fast: 0.2s ease;
-  --transition-slow: 0.5s ease;
-  
-  --z-navbar: 100;
-  --z-sidebar: 200;
+    --bg: #000000;
+    --text: #ffffff;
+    --accent: red;
+    --font-main: 'JetBrains Mono', monospace;
+    --font-accent: 'Parisienne', cursive;
 }
 
 body {
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--bg);
+    color: var(--text);
     line-height: 1.6;
-    overflow-x: hidden;
 }
 
-button, a {
+button,
+a {
     background: none;
     border: none;
     outline: none;
     color: inherit;
     cursor: pointer;
     text-decoration: none;
-    transition: var(--transition-fast);
 }
 
 input {
     background: none;
     border: none;
     outline: none;
-    font-family: inherit;
 }
-

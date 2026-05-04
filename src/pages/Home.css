@@ -1,0 +1,9 @@
+.main {
+    font-family: var(--font-main);
+    font-size: 1.2rem;
+}
+
+.try {
+    font-family: var(--font-accent);
+    font-size: 1.2rem;
+}
