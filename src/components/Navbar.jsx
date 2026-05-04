@@ -1,28 +1,26 @@
 import React from 'react';
 import './Navbar.css';
-// import { MdMail } from "react-icons/md";
 import { MdOutlineMenu } from "react-icons/md";
 
 const Navbar = ({ sidebarOpen, setSidebarOpen }) => {
   return (
-    <div className='navbar-container'>
-        <div className='navbar-left'>
-            <div className='navbar-logo'>
-            </div>
-            <div className='navbar-title'>
-                upendra 
-                {/* kumar */}
-            </div>
+    <nav className='navbar'>
+      <div className='navbar__content container'>
+        <div className='navbar__logo'>
+          <span className='navbar__title'>UPENDRA</span>
         </div>
-        <div className='navbar-right'>
-            <div className='nav-link'>
-                <button onClick={() => setSidebarOpen(true)}>
-                    <MdOutlineMenu size={30}/>
-                </button>
-            </div>
+        <div className='navbar__actions'>
+          <button 
+            className='navbar__menu-btn'
+            onClick={() => setSidebarOpen(true)}
+            aria-label="Open Menu"
+          >
+            <MdOutlineMenu size={32}/>
+          </button>
         </div>
-    </div>
+      </div>
+    </nav>
   )
 }
 
-export default Navbar
+export default Navbar;

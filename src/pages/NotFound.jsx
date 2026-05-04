@@ -1,18 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './NotFound.css';
+import Section from '../layout/Section';
 
 const NotFound = () => {
   return (
-    <div className='section'>
-      <div className='section-background'>
-      </div>
-      <div className='section-foreground'>
-        <div className='not-found-container'>
-          <h1 className='heading-h1'>404</h1>
-          <h2 className='heading-h2'>Page Not Found</h2>
+    <Section variant="full">
+      <div className='not-found-container'>
+        <div className="not-found-content">
+
+          <h1 className='not-found-code'>404</h1>
+          <div className="not-found-divider" />
+          <Link to="/" className="not-found-home-btn">
+            Go Back Home
+          </Link>
         </div>
       </div>
-    </div>
+    </Section>
   )
 }
 

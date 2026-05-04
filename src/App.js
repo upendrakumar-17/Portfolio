@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
-import './layout/Section.css';
-import './layout/Subsection.css';
+
 import Home from './pages/Home';
 import NotFound from "./pages/NotFound";
 import Loading from "./pages/Loading";
@@ -13,7 +12,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 6000); // adjust duration
+    }, 6000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -25,7 +24,6 @@ function App() {
           :
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/l" element={<Loading />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
       }

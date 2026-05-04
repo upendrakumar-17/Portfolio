@@ -1,17 +1,22 @@
 import React from 'react';
 import './Section.css';
 
-const Section = () => {
+const Section = ({ 
+  children, 
+  background, 
+  variant = 'full', // 'full' or 'partial'
+  className = '' 
+}) => {
   return (
-    <section className='section'>
-        <div className='section-background'>
-            Background 
-        </div>
-        <div className='section-foreground'>
-            Foreground
-        </div>
+    <section className={`section section--${variant} ${className}`}>
+      <div className='section__background'>
+        {background}
+      </div>
+      <div className='section__foreground'>
+        {children}
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default Section;
+export default Section;
