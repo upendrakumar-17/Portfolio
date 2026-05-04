@@ -17,9 +17,9 @@ const CONFIG = {
   // Mouse interaction
   MOUSE_RADIUS: 100,          // repulsion bubble radius in px
   MOUSE_REPEL_FORCE: 3.5,      // how strongly dots flee the cursor
-  MOUSE_DAMPING: 0.88,         // how quickly the repulsion fades (0–1)
-  MOUSE_CURSOR_DOT_SIZE: 3.5,  // the custom cursor dot radius in px
-  MOUSE_RING_OPACITY: 0.08,    // opacity of the subtle ring around the cursor
+  MOUSE_DAMPING: 0.95,         // how quickly the repulsion fades (0–1)
+  MOUSE_CURSOR_DOT_SIZE: 0.0,  // the custom cursor dot radius in px
+  MOUSE_RING_OPACITY: 0.00,    // opacity of the subtle ring around the cursor
 
   // Colors  (CSS color strings — supports rgba / hex / hsl)
   // Set to null to auto-detect from prefers-color-scheme

@@ -7,7 +7,8 @@
 :root {
     --bg: #000000;
     --text: #ffffff;
-    --accent: red;
+    --accent: rgb(255, 0, 0);
+    --accent-hover: rgb(200, 0, 0);
     --font-main: 'JetBrains Mono', monospace;
     --font-accent: 'Parisienne', cursive;
 }
