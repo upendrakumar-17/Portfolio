@@ -38,7 +38,7 @@
 }
 
 .hero-firstname h1 {
-    font-size: clamp(49px, 10vw, 140px);
+    font-size: clamp(40px, 10vw, 140px);
     font-weight: 700;
 }
 

@@ -10,7 +10,8 @@ const Navbar = ({ sidebarOpen, setSidebarOpen }) => {
             <div className='navbar-logo'>
             </div>
             <div className='navbar-title'>
-                upendra kumar
+                upendra 
+                {/* kumar */}
             </div>
         </div>
         <div className='navbar-right'>

@@ -13,21 +13,21 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
       </div>
 
       <div className='sidebar-content'>
-        <div className='sidebar-content-item'>sdjvbjfdsvb</div>
-        <div className='sidebar-content-item'>dnvccv xcj</div>
-        <div className='sidebar-content-item'>xdvc jj </div>
-        <div className='sidebar-content-item'>4xvcn cjhkxz cjdc</div>
-        <div className='sidebar-content-item'>5zjhczhxcxzh  </div>
-        <div className='sidebar-content-item'>asjchbas czzjxcb 6</div>
-        <div className='sidebar-content-item'>7sdxjbsad b </div>
-        <div className='sidebar-content-item'>ajsbchsajbc</div>
-        <div className='sidebar-content-item'>shjcbsac</div>
-        <div className='sidebar-content-item'>1absfdd bch 0</div>
-        <div className='sidebar-content-item'>1ecewfew1</div>
-        <div className='sidebar-content-item'>1ecfewfae 2</div>
-        <div className='sidebar-content-item'>rtvrvter</div>
-        <div className='sidebar-content-item'>1aevrtetz 4</div>
-        <div className='sidebar-content-item'>1retgves5</div>
+        <div className='sidebar-content-item'>one</div>
+        <div className='sidebar-content-item'>two </div>
+        <div className='sidebar-content-item'>three  </div>
+        <div className='sidebar-content-item'>four</div>
+        <div className='sidebar-content-item'>five  </div>
+        <div className='sidebar-content-item'>six</div>
+        <div className='sidebar-content-item'>seven</div>
+        <div className='sidebar-content-item'>eight</div>
+        <div className='sidebar-content-item'>nine</div>
+        <div className='sidebar-content-item'>ten</div>
+        <div className='sidebar-content-item'>eleven</div>
+        <div className='sidebar-content-item'>twelve</div>
+        <div className='sidebar-content-item'>thirteen</div>
+        <div className='sidebar-content-item'>fourteen</div>
+        <div className='sidebar-content-item'>fifteen</div>
       </div>
       <div className='sidebar-footer'>
         <div className='sidebar-heading'>

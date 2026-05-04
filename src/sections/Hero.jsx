@@ -2,11 +2,8 @@ import React from 'react';
 import './Hero.css';
 import Gabi from '../assets/Gabi.png';
 import TypingGreeting from '../components/TypingGreeting';
-import { MdSend } from "react-icons/md";
-// import SendButton from '../components/SendButton';
 
 const Hero = () => {
-
 
     return (
         <section className='section'>
@@ -31,22 +28,6 @@ const Hero = () => {
                             <h2>KUMAR</h2>
                         </div>
                     </div>
-                    <div className='hero-message-container'>
-                        <input
-                            className='hero-message-input'
-                            type="text"
-                            placeholder='Enter your greetings here...'
-                            maxLength={50} />
-                        <button
-                            className='hero-message-send-button'
-                            onClick={() => {
-                                console.log("greeting button clicked.")
-                            }}>
-                            <MdSend size={30} />
-                        </button>
-                    </div>
-                    {/* <MessageBox/> */}
-                    {/* <SendButton/> */}
                 </div>
             </div>
         </section>
