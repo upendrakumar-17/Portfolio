@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import AboutGridBackground from '../components/AboutGridBackground';
+// import AboutGridBackground from '../components/AboutGridBackground';
 
 const About = () => {
   return (

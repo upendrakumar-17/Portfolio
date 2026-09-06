@@ -80,11 +80,11 @@
 
 .sidebar-heading{
     font-family: "Sekuya", system-ui;
-    color: rgba(255, 2, 2, 0.647);
+    /* color: rgba(255, 2, 2, 0.647); */
 }
 
 .heart{
-    color: white;
+    color: rgb(255, 0, 0);
 }
 
 .sidebar-title{
